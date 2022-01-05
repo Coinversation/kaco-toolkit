@@ -6,7 +6,7 @@
   "files": [
     "lib"
   ],
-  "repository": "https://github.com/pancakeswap/pancake-toolkit/tree/master/packages/eslint-config-pancake",
+  "repository": "https://github.com/Coinversation/kaco-toolkit/tree/main/packages/eslint-config-kaco",
   "license": "MIT",
   "author": "RabbitDoge",
   "private": false,
