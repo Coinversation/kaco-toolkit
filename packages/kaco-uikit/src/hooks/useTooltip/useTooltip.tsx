@@ -23,6 +23,8 @@ const useTooltip = (content: React.ReactNode, options: TooltipOptions): TooltipR
     arrowPadding = 16,
     tooltipPadding = { left: 16, right: 16 },
     tooltipOffset = [0, 10],
+    tootipStyle,
+    hideArrow,
   } = options;
   const [targetElement, setTargetElement] = useState<HTMLElement | null>(null);
   const [tooltipElement, setTooltipElement] = useState<HTMLElement | null>(null);
@@ -184,9 +186,9 @@ const useTooltip = (content: React.ReactNode, options: TooltipOptions): TooltipR
   });
 
   const tooltip = (
-    <StyledTooltip ref={setTooltipElement} style={styles.popper} {...attributes.popper}>
+    <StyledTooltip ref={setTooltipElement} style={{ ...styles.popper, ...tootipStyle }} {...attributes.popper}>
       <ThemeProvider theme={invertTheme}>{content}</ThemeProvider>
-      <Arrow ref={setArrowElement} style={styles.arrow} />
+      {!hideArrow && <Arrow ref={setArrowElement} style={styles.arrow} />}
     </StyledTooltip>
   );
 

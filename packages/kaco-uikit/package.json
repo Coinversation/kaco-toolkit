@@ -1,5 +1,5 @@
 {
-  "name": "@pancakeswap/uikit",
+  "name": "@kaco/uikit",
   "version": "0.62.0",
   "description": "Set of UI components for pancake projects",
   "main": "dist/index.cjs.js",
@@ -49,7 +49,8 @@
     "@types/styled-system": "^5.1.10",
     "lodash": "^4.17.20",
     "react-popper": "^2.2.5",
-    "styled-system": "^5.1.5"
+    "styled-system": "^5.1.5",
+    "typescript": "^4.5.4"
   },
   "publishConfig": {
     "access": "public"
