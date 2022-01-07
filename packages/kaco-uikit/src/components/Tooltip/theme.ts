@@ -12,5 +12,5 @@ export const dark: TooltipTheme = {
   background: darkColors.cardBorder,
   text: lightColors.text,
   boxShadow: "0px 4px 9px 1px rgba(9, 2, 18, 0.2);",
-  border: `2px solid ${darkColors.primarySecondary}`,
+  border: `2px solid ${darkColors.borderColor}`,
 };

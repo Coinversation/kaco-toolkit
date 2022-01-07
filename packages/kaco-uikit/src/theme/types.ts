@@ -48,7 +48,6 @@ export type Colors = {
   warning: string;
   cardBorder: string;
   cardBackground: string;
-  primarySecondary: string;
   contrast: string;
   dropdown: string;
   dropdownDeep: string;
@@ -72,6 +71,11 @@ export type Colors = {
   gold: string;
   silver: string;
   bronze: string;
+
+  // add
+  borderColor: string;
+  textSubSubtle: string;
+  btnTextColor: string;
 };
 
 export type ZIndices = {
