@@ -21,14 +21,15 @@ export const StyledTooltip = styled.div`
   padding: 16px;
   font-size: 16px;
   line-height: 130%;
-  border-radius: 16px;
+  border-radius: 12px;
   max-width: 320px;
   z-index: 101;
-  background: ${({ theme }) => theme.tooltip.background};
   color: ${({ theme }) => theme.tooltip.text};
+  background: ${({ theme }) => theme.tooltip.background};
   box-shadow: ${({ theme }) => theme.tooltip.boxShadow};
+  border: ${({ theme }) => theme.tooltip.border};
 
-  &[data-popper-placement^="top"] > ${Arrow} {
+  /* &[data-popper-placement^="top"] > ${Arrow} {
     bottom: -4px;
   }
 
@@ -42,5 +43,5 @@ export const StyledTooltip = styled.div`
 
   &[data-popper-placement^="right"] > ${Arrow} {
     left: -4px;
-  }
+  } */
 `;

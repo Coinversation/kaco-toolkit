@@ -1,13 +1,10 @@
 import { darkColors, lightColors } from "../../theme/colors";
+import { NavTheme } from "./types";
 
-export interface NavThemeType {
-  background: string;
-}
-
-export const light: NavThemeType = {
+export const light: NavTheme = {
   background: lightColors.backgroundAlt,
 };
 
-export const dark: NavThemeType = {
+export const dark: NavTheme = {
   background: darkColors.backgroundAlt,
 };

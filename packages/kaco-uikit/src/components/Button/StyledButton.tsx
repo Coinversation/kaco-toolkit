@@ -11,7 +11,7 @@ interface TransientButtonProps extends ThemedButtonProps {
   $isLoading?: boolean;
 }
 
-const getDisabledStyles = ({ $isLoading, theme }: TransientButtonProps) => {
+const getDisabledStyles = ({ $isLoading, theme, variant: v }: TransientButtonProps) => {
   if ($isLoading === true) {
     return `
       &:disabled,
@@ -24,10 +24,10 @@ const getDisabledStyles = ({ $isLoading, theme }: TransientButtonProps) => {
   return `
     &:disabled,
     &.pancake-button--disabled {
-      background-color: ${theme.colors.backgroundDisabled};
-      border-color: ${theme.colors.backgroundDisabled};
+      background-color: ${v === "primary" ? "#1F373B" : "#272E32"};
+      border-color: ${v === "primary" ? "#1F373B" : "#272E32"};
+      color: ${v === "primary" ? "#122124" : "#484E4E"};
       box-shadow: none;
-      color: ${theme.colors.textDisabled};
       cursor: not-allowed;
     }
   `;
@@ -46,13 +46,13 @@ const getOpacity = ({ $isLoading = false }: TransientButtonProps) => {
 const StyledButton = styled.button<BaseButtonProps>`
   align-items: center;
   border: 0;
-  border-radius: 16px;
+  border-radius: 12px;
   box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset;
   cursor: pointer;
   display: inline-flex;
   font-family: inherit;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: bold;
   justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;

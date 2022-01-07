@@ -21,14 +21,6 @@ it("renders correctly", () => {
       list-style-type: none;
     }
 
-    .c0 a {
-      color: #1FC7D4;
-    }
-
-    .c0 a:hover {
-      color: #53DEE9;
-    }
-
     <ul
         class="c0"
       />

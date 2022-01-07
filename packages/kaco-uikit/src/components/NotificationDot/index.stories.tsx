@@ -13,17 +13,9 @@ export default {
 
 export const Default: React.FC = () => {
   return (
-    <>
-      <NotificationDot show>
-        <Button>Hi</Button>
-      </NotificationDot>
-      <NotificationDot show color="warning">
-        <Button>Hi</Button>
-      </NotificationDot>
-      <NotificationDot show color="success">
-        <Button>Hi</Button>
-      </NotificationDot>
-    </>
+    <NotificationDot show>
+      <Button>Hi</Button>
+    </NotificationDot>
   );
 };
 

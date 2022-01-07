@@ -12,7 +12,7 @@ export default {
   argTypes: {},
 };
 
-const DefaultTemplate: React.FC = (args) => {
+export const Default: React.FC = () => {
   const [progress, setProgress] = useState(random(1, 100));
 
   const handleClick = () => setProgress(random(1, 100));
@@ -25,14 +25,14 @@ const DefaultTemplate: React.FC = (args) => {
             <Heading size="md" mb="8px">
               {capitalize(variant)}
             </Heading>
-            <Progress variant={variant} primaryStep={progress} {...args} />
+            <Progress variant={variant} primaryStep={progress} />
           </Box>
         );
       })}
       <Heading size="md" mb="8px">
         Small
       </Heading>
-      <Progress scale="sm" primaryStep={progress} {...args} />
+      <Progress scale="sm" primaryStep={progress} />
       <div style={{ marginTop: "32px" }}>
         <Button type="button" scale="sm" onClick={handleClick}>
           Random Progress
@@ -40,12 +40,6 @@ const DefaultTemplate: React.FC = (args) => {
       </div>
     </div>
   );
-};
-
-export const Default = DefaultTemplate.bind({});
-
-Default.args = {
-  useDark: false,
 };
 
 export const WithSecondary: React.FC = () => {

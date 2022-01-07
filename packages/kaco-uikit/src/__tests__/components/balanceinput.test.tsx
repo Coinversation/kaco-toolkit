@@ -184,13 +184,15 @@ it("renders correctly with unit prop", () => {
     }
 
     .c5 {
-      color: #280D5F;
+      color: #7A6EAA;
       font-size: 16px;
       font-weight: 400;
       line-height: 1.5;
+      margin-left: 4px;
+      text-align: right;
     }
 
-    .c7 {
+    .c6 {
       color: #7A6EAA;
       font-size: 12px;
       font-weight: 400;
@@ -239,13 +241,6 @@ it("renders correctly with unit prop", () => {
 
     .c3:focus:not(:disabled) {
       box-shadow: 0px 0px 0px 1px #7645D9,0px 0px 0px 4px rgba(118,69,217,0.6);
-    }
-
-    .c6 {
-      margin-left: 4px;
-      text-align: right;
-      color: #7A6EAA;
-      white-space: nowrap;
     }
 
     .c0 {
@@ -308,14 +303,14 @@ it("renders correctly with unit prop", () => {
                 value="14"
               />
               <div
-                class="c5 c6"
-                color="text"
+                class="c5"
+                color="textSubtle"
               >
                 CAKE
               </div>
             </div>
             <div
-              class="c7"
+              class="c6"
               color="textSubtle"
               font-size="12px"
             >
@@ -340,11 +335,7 @@ it("renders correctly with unit prop and switchEditingUnits", () => {
   );
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
-      .c8 {
-      padding-left: 12px;
-    }
-
-    .c1 {
+      .c1 {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -366,75 +357,7 @@ it("renders correctly with unit prop and switchEditingUnits", () => {
       align-items: center;
     }
 
-    .c12 {
-      -webkit-align-self: center;
-      -ms-flex-item-align: center;
-      align-self: center;
-      fill: #7A6EAA;
-      -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-      flex-shrink: 0;
-    }
-
-    .c5 {
-      color: #280D5F;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 1.5;
-    }
-
     .c7 {
-      color: #7A6EAA;
-      font-size: 12px;
-      font-weight: 400;
-      line-height: 1.5;
-      font-size: 12px;
-      text-align: right;
-    }
-
-    .c3 {
-      background-color: #eeeaf4;
-      border: 0;
-      border-radius: 16px;
-      box-shadow: inset 0px 2px 2px -1px rgba(74,74,104,0.1);
-      color: #280D5F;
-      display: block;
-      font-size: 16px;
-      height: 40px;
-      outline: 0;
-      padding: 0 16px;
-      width: 100%;
-      border: 1px solid #d7caec;
-    }
-
-    .c3::-webkit-input-placeholder {
-      color: #7A6EAA;
-    }
-
-    .c3::-moz-placeholder {
-      color: #7A6EAA;
-    }
-
-    .c3:-ms-input-placeholder {
-      color: #7A6EAA;
-    }
-
-    .c3::placeholder {
-      color: #7A6EAA;
-    }
-
-    .c3:disabled {
-      background-color: #E9EAEB;
-      box-shadow: none;
-      color: #BDC2C4;
-      cursor: not-allowed;
-    }
-
-    .c3:focus:not(:disabled) {
-      box-shadow: 0px 0px 0px 1px #7645D9,0px 0px 0px 4px rgba(118,69,217,0.6);
-    }
-
-    .c9 {
       -webkit-align-items: center;
       -webkit-box-align: center;
       -ms-flex-align: center;
@@ -470,11 +393,11 @@ it("renders correctly with unit prop and switchEditingUnits", () => {
       box-shadow: none;
     }
 
-    .c9:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {
+    .c7:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {
       opacity: 0.65;
     }
 
-    .c9:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {
+    .c7:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {
       opacity: 0.85;
       -webkit-transform: translateY(1px);
       -ms-transform: translateY(1px);
@@ -482,8 +405,8 @@ it("renders correctly with unit prop and switchEditingUnits", () => {
       box-shadow: none;
     }
 
-    .c9:disabled,
-    .c9.pancake-button--disabled {
+    .c7:disabled,
+    .c7.pancake-button--disabled {
       background-color: #E9EAEB;
       border-color: #E9EAEB;
       box-shadow: none;
@@ -491,20 +414,79 @@ it("renders correctly with unit prop and switchEditingUnits", () => {
       cursor: not-allowed;
     }
 
-    .c10 {
+    .c8 {
       padding: 0;
       width: 32px;
     }
 
-    .c11 {
-      width: 16px;
+    .c9 {
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      fill: #7A6EAA;
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+    }
+
+    .c5 {
+      color: #7A6EAA;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-left: 4px;
+      text-align: right;
     }
 
     .c6 {
-      margin-left: 4px;
-      text-align: right;
       color: #7A6EAA;
-      white-space: nowrap;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.5;
+      font-size: 12px;
+      text-align: right;
+    }
+
+    .c3 {
+      background-color: #eeeaf4;
+      border: 0;
+      border-radius: 16px;
+      box-shadow: inset 0px 2px 2px -1px rgba(74,74,104,0.1);
+      color: #280D5F;
+      display: block;
+      font-size: 16px;
+      height: 40px;
+      outline: 0;
+      padding: 0 16px;
+      width: 100%;
+      border: 1px solid #d7caec;
+    }
+
+    .c3::-webkit-input-placeholder {
+      color: #7A6EAA;
+    }
+
+    .c3::-moz-placeholder {
+      color: #7A6EAA;
+    }
+
+    .c3:-ms-input-placeholder {
+      color: #7A6EAA;
+    }
+
+    .c3::placeholder {
+      color: #7A6EAA;
+    }
+
+    .c3:disabled {
+      background-color: #E9EAEB;
+      box-shadow: none;
+      color: #BDC2C4;
+      cursor: not-allowed;
+    }
+
+    .c3:focus:not(:disabled) {
+      box-shadow: 0px 0px 0px 1px #7645D9,0px 0px 0px 4px rgba(118,69,217,0.6);
     }
 
     .c0 {
@@ -567,14 +549,14 @@ it("renders correctly with unit prop and switchEditingUnits", () => {
                 value="14"
               />
               <div
-                class="c5 c6"
-                color="text"
+                class="c5"
+                color="textSubtle"
               >
                 CAKE
               </div>
             </div>
             <div
-              class="c7"
+              class="c6"
               color="textSubtle"
               font-size="12px"
             >
@@ -582,14 +564,14 @@ it("renders correctly with unit prop and switchEditingUnits", () => {
             </div>
           </div>
           <div
-            class="c8 c2"
+            class="c2"
           >
             <button
-              class="c9 c10 c11"
+              class="c7 c8"
               scale="sm"
             >
               <svg
-                class="c12"
+                class="c9"
                 color="textSubtle"
                 viewBox="0 0 24 25"
                 width="20px"

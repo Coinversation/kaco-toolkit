@@ -16,11 +16,10 @@ interface Props {
   login: Login;
   onDismiss?: () => void;
   displayCount?: number;
-  t: (key: string) => string;
 }
 
 const WalletWrapper = styled(Box)`
-  border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};
+  /* border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder}; */
 `;
 
 /**
@@ -49,34 +48,33 @@ const getPreferredConfig = (walletConfig: Config[]) => {
   ];
 };
 
-const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null, displayCount = 3, t }) => {
+const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null, displayCount = 3 }) => {
   const [showMore, setShowMore] = useState(false);
   const theme = useTheme();
-  const sortedConfig = getPreferredConfig(config);
+  const sortedConfig = getPreferredConfig(config).filter((c) => c.title === "Metamask");
   const displayListConfig = showMore ? sortedConfig : sortedConfig.slice(0, displayCount);
 
+  console.log("sortedConfig", sortedConfig);
   return (
     <ModalContainer minWidth="320px">
-      <ModalHeader background={getThemeValue("colors.gradients.bubblegum")(theme)}>
+      <ModalHeader>
         <ModalTitle>
-          <Heading>{t("Connect Wallet")}</Heading>
+          <Heading>Connect Wallet</Heading>
         </ModalTitle>
         <ModalCloseButton onDismiss={onDismiss} />
       </ModalHeader>
       <ModalBody width={["320px", null, "340px"]}>
         <WalletWrapper py="24px" maxHeight="453px" overflowY="auto">
-          <Grid gridTemplateColumns="1fr 1fr">
-            {displayListConfig.map((wallet) => (
-              <Box key={wallet.title}>
-                <WalletCard walletConfig={wallet} login={login} onDismiss={onDismiss} />
-              </Box>
-            ))}
-            {!showMore && <MoreWalletCard t={t} onClick={() => setShowMore(true)} />}
-          </Grid>
+          {displayListConfig.map((wallet) => (
+            <Box key={wallet.title}>
+              <WalletCard walletConfig={wallet} login={login} onDismiss={onDismiss} />
+            </Box>
+          ))}
+          {/* {!showMore && <MoreWalletCard onClick={() => setShowMore(true)} />} */}
         </WalletWrapper>
-        <Box p="24px">
+        {/* <Box p="24px">
           <Text textAlign="center" color="textSubtle" as="p" mb="16px">
-            {t("Haven’t got a crypto wallet yet?")}
+            Haven&#39;t got a crypto wallet yet?
           </Text>
           <Button
             as="a"
@@ -85,9 +83,9 @@ const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null, displayC
             width="100%"
             {...getExternalLinkProps()}
           >
-            {t("Learn How to Connect")}
+            Learn How to Connect
           </Button>
-        </Box>
+        </Box> */}
       </ModalBody>
     </ModalContainer>
   );

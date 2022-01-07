@@ -27,6 +27,7 @@ it("renders correctly", () => {
 
     .c0 > button,
     .c0 > a {
+      margin-left: 2px;
       -webkit-flex: auto;
       -ms-flex: auto;
       flex: auto;
