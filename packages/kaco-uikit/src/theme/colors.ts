@@ -7,7 +7,12 @@ export const baseColors = {
   secondary: "#212929",
   failure: "#FF2d55",
   success: "#31D0AA",
-  warning: "#FFB237",
+  warning: "#D87E2C",
+};
+
+export const tooltipColors = {
+  background: "#111717",
+  borderColor: "#384748",
 };
 
 export const additionalColors = {
@@ -17,10 +22,10 @@ export const additionalColors = {
   silver: "#B2B2B2",
   bronze: "#E7974D",
 };
-
 export const darkColors: Colors = {
   ...baseColors,
   ...additionalColors,
+  tooltipColors,
   background: "#020F0F",
   backgroundDisabled: "#3c3742",
   backgroundAlt: "#020F0F",
@@ -36,10 +41,11 @@ export const darkColors: Colors = {
   tertiary: "#12171A",
   text: "#CFDADA",
   textDisabled: "#666171",
-  textSubtle: "#5E7172",
+  textSubtle: "#6E8182",
   textSubSubtle: "#3C4E4E",
   disabled: "#524B63",
   btnTextColor: "#111717",
+  btnBgSecondaryColor: "#01100f",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
     inverseBubblegum: "linear-gradient(139.73deg, #3D2A54 0%, #313D5C 100%)",
@@ -49,6 +55,6 @@ export const darkColors: Colors = {
     violetAlt: "linear-gradient(180deg, #434575 0%, #66578D 100%)",
     gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
   },
-  borderColor: "#5E7172",
+  borderColor: "#384748",
 };
 export const lightColors = darkColors;

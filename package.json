@@ -25,6 +25,12 @@
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@ethersproject/address": "^5.0.2",
+    "@ethersproject/networks": "^5.0.2",
+    "@ethersproject/contracts": "^5.5.0",
+    "@ethersproject/providers": "^5.5.1",
+    "@ethersproject/solidity": "^5.5.0",
+    "jsbi": "^3.1.1",
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.4",
     "@commitlint/cli": "^13.1.0",

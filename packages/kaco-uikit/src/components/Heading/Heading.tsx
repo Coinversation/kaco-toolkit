@@ -27,10 +27,6 @@ const Heading = styled(Text).attrs({ bold: true })<HeadingProps>`
   line-height: 1.1;
   font-size: 16px;
   font-weight: bold;
-  color: #ffffff;
-  /* ${({ theme }) => theme.mediaQueries.lg} {
-    font-size: ${({ scale }) => style[scale || scales.MD].fontSizeLg};
-  } */
 `;
 
 Heading.defaultProps = {

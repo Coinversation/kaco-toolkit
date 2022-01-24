@@ -5,6 +5,7 @@ export interface TooltipRefs {
   targetRef: React.Dispatch<React.SetStateAction<HTMLElement | null>>;
   tooltip: React.ReactNode;
   tooltipVisible: boolean;
+  setTooltipVisible: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export interface TooltipOptions {

@@ -196,6 +196,7 @@ const useTooltip = (content: React.ReactNode, options: TooltipOptions): TooltipR
     targetRef: setTargetElement,
     tooltip: tooltipInPortal ?? tooltip,
     tooltipVisible: visible,
+    setTooltipVisible: setVisible,
   };
 };
 

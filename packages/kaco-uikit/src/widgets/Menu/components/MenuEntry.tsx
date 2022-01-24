@@ -70,7 +70,7 @@ MenuEntry.defaultProps = {
 const LinkStatus = styled(Text)<{ color: keyof Colors }>`
   border-radius: ${({ theme }) => theme.radii.default};
   padding: 0 8px;
-  border: 2px solid;
+  border: 1px solid;
   border-color: ${({ theme, color }) => theme.colors[color]};
   box-shadow: none;
   color: ${({ theme, color }) => theme.colors[color]};

@@ -388,7 +388,7 @@ it("renders correctly", () => {
     .c18 {
       border-radius: 16px;
       padding: 0 8px;
-      border: 2px solid;
+      border: 1px solid;
       border-color: #ED4B9E;
       box-shadow: none;
       color: #ED4B9E;
@@ -398,7 +398,7 @@ it("renders correctly", () => {
     .c20 {
       border-radius: 16px;
       padding: 0 8px;
-      border: 2px solid;
+      border: 1px solid;
       border-color: #FFB237;
       box-shadow: none;
       color: #FFB237;
@@ -574,7 +574,7 @@ it("renders correctly", () => {
 
     @media screen and (min-width:968px) {
       .c9 {
-        border-right: 2px solid rgba(133,133,133,0.1);
+        border-right: 1px solid rgba(133,133,133,0.1);
         width: 56px;
       }
     }

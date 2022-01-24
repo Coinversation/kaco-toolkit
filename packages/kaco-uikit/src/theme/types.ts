@@ -38,6 +38,13 @@ export type Gradients = {
 };
 
 export type Colors = {
+  // Additional colors
+  binance: string;
+  overlay: string;
+  gold: string;
+  silver: string;
+  bronze: string;
+  btnBgSecondaryColor: string;
   primary: string;
   primaryBright: string;
   primaryDark: string;
@@ -65,13 +72,10 @@ export type Colors = {
   // Gradients
   gradients: Gradients;
 
-  // Additional colors
-  binance: string;
-  overlay: string;
-  gold: string;
-  silver: string;
-  bronze: string;
-
+  tooltipColors: {
+    background: string;
+    borderColor: string;
+  };
   // add
   borderColor: string;
   textSubSubtle: string;
@@ -81,4 +85,5 @@ export type Colors = {
 export type ZIndices = {
   dropdown: number;
   modal: number;
+  header: number;
 };

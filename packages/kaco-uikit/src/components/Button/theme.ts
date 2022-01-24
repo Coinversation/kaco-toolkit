@@ -6,8 +6,8 @@ export const scaleVariants = {
     padding: "0 24px",
   },
   [scales.SM]: {
-    height: "32px",
-    padding: "0 16px",
+    height: "40px",
+    padding: "0 12px",
   },
   [scales.XS]: {
     height: "20px",
@@ -22,10 +22,7 @@ export const styleVariants = {
     color: "btnTextColor",
   },
   [variants.SECONDARY]: {
-    backgroundColor: "transparent",
-    border: "2px solid",
-    borderColor: "primary",
-    boxShadow: "none",
+    backgroundColor: "secondary",
     color: "primary",
     ":disabled": {
       backgroundColor: "transparent",
@@ -50,7 +47,9 @@ export const styleVariants = {
   },
   [variants.TEXT]: {
     backgroundColor: "transparent",
+    // border: "1px solid",
+    // borderColor: "primary",
+    // boxShadow: "none",
     color: "primary",
-    boxShadow: "none",
   },
 };
