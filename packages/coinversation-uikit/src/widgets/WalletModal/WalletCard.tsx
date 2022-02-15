@@ -13,14 +13,15 @@ interface Props {
   onDismiss: () => void;
 }
 
-const WalletButton = styled(Button).attrs({ width: "100%", variant: "text", py: "16px" })`
+const WalletButton = styled(Button).attrs({ width: "100%", variant: "text", padding: "10px 20px" })`
   align-items: center;
   display: flex;
-  flex-direction: column;
   height: auto;
-  justify-content: center;
+  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
+  background-color: #fff4eb;
+  border-radius: 12px;
 `;
 
 export const MoreWalletCard: React.FC<ButtonProps> = (props) => {
@@ -55,8 +56,10 @@ const WalletCard: React.FC<Props> = ({ login, walletConfig, onDismiss }) => {
       }}
       id={`wallet-connect-${title.toLocaleLowerCase()}`}
     >
-      <Icon width="40px" mb="8px" />
-      <Text fontSize="14px">{title}</Text>
+      <Icon width="40px" />
+      <Text fontSize="15px" fontWeight="bold">
+        {title}
+      </Text>
     </WalletButton>
   );
 };

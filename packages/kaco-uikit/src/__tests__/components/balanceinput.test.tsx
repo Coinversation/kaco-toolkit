@@ -364,7 +364,6 @@ it("renders correctly with unit prop and switchEditingUnits", () => {
       align-items: center;
       border: 0;
       border-radius: 16px;
-      box-shadow: 0px -1px 0px 0px rgba(14,14,44,0.4) inset;
       cursor: pointer;
       display: -webkit-inline-box;
       display: -webkit-inline-flex;

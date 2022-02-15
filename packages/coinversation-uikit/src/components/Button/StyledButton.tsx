@@ -24,9 +24,9 @@ const getDisabledStyles = ({ $isLoading, theme, variant: v }: TransientButtonPro
   return `
     &:disabled,
     &.pancake-button--disabled {
-      background-color: ${v === "primary" ? "#1F373B" : "#F9F9F9"};
-      border-color: ${v === "primary" ? "#1F373B" : "#F9F9F9"};
-      color: ${v === "primary" ? "#122124" : "#484E4E"};
+      background-color: ${v === "primary" ? "#F8F8F8" : "#F9F9F9"};
+      border-color: ${v === "primary" ? "#F8F8F8" : "#F9F9F9"};
+      color: ${v === "primary" ? "#C2C2C2" : "#484E4E"};
       box-shadow: none;
       cursor: not-allowed;
     }
@@ -46,8 +46,7 @@ const getOpacity = ({ $isLoading = false }: TransientButtonProps) => {
 const StyledButton = styled.button<BaseButtonProps>`
   align-items: center;
   border: 0;
-  border-radius: 12px;
-  box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset;
+  border-radius: 8px;
   cursor: pointer;
   display: inline-flex;
   font-family: inherit;

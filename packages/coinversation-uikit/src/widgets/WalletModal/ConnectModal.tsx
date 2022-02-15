@@ -56,17 +56,17 @@ const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null, displayC
 
   console.log("sortedConfig", sortedConfig);
   return (
-    <ModalContainer minWidth="320px">
+    <ModalContainer minWidth="340px">
       <ModalHeader>
         <ModalTitle>
           <Heading>Connect Wallet</Heading>
         </ModalTitle>
         <ModalCloseButton onDismiss={onDismiss} />
       </ModalHeader>
-      <ModalBody width={["320px", null, "340px"]}>
-        <WalletWrapper py="24px" maxHeight="453px" overflowY="auto">
+      <ModalBody width={["340px", null, "480px"]}>
+        <WalletWrapper paddingBottom="24px" maxHeight="453px" overflowY="auto">
           {displayListConfig.map((wallet) => (
-            <Box key={wallet.title}>
+            <Box key={wallet.title} paddingLeft="30px" paddingRight="30px">
               <WalletCard walletConfig={wallet} login={login} onDismiss={onDismiss} />
             </Box>
           ))}

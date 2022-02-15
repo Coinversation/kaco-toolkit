@@ -3,8 +3,8 @@ import { Colors } from "./types";
 export const baseColors = {
   primary: "#E6007A",
   primaryBright: "#53DEE9",
-  primaryDark: "#0098A1",
-  secondary: "#212929",
+  primaryDark: "#982459",
+  secondary: "#F4F0F0",
   failure: "#FF2d55",
   success: "#31D0AA",
   warning: "#D87E2C",
@@ -12,12 +12,12 @@ export const baseColors = {
 
 export const tooltipColors = {
   background: "#fff",
-  borderColor: "#384748",
+  borderColor: "#EEEEEE",
 };
 
 export const additionalColors = {
   binance: "#F0B90B",
-  overlay: "#fff",
+  overlay: "#000000",
   gold: "#FFC700",
   silver: "#B2B2B2",
   bronze: "#E7974D",
@@ -27,7 +27,8 @@ export const lightColors: Colors = {
   ...additionalColors,
   tooltipColors,
   background: "#FBFBFB",
-  backgroundDisabled: "#3c3742",
+  background02: "#F9F9F9",
+  backgroundDisabled: "#f1ecef",
   backgroundAlt: "#FFFFFF",
   cardBorder: "#EEEEEE",
   cardBackground: "#fff",
@@ -37,8 +38,6 @@ export const lightColors: Colors = {
   invertedContrast: "#191326",
   input: "#372F47",
   inputSecondary: "#262130",
-  inputBg: "#F9F9F9",
-  primaryDark: "#0098A1",
   tertiary: "#FDFBFB",
   text: "#343133",
   textDisabled: "#666171",
@@ -56,6 +55,6 @@ export const lightColors: Colors = {
     violetAlt: "linear-gradient(180deg, #434575 0%, #66578D 100%)",
     gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
   },
-  borderColor: "#384748",
+  borderColor: "#EEEEEE",
 };
 export const darkColors = lightColors;

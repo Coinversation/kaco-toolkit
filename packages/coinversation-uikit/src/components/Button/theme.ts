@@ -32,6 +32,8 @@ export const styleVariants = {
     backgroundColor: "tertiary",
     boxShadow: "none",
     color: "primary",
+    border: "1px solid",
+    borderColor: "primary",
   },
   [variants.SUBTLE]: {
     backgroundColor: "textSubtle",
