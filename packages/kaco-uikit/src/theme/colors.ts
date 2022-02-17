@@ -27,7 +27,7 @@ export const darkColors: Colors = {
   ...additionalColors,
   tooltipColors,
   background: "#020F0F",
-  backgroundDisabled: "#3c3742",
+  backgroundDisabled: "#233e42",
   backgroundAlt: "#020F0F",
   cardBorder: "#171E1E",
   cardBackground: "#111717",
